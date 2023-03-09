@@ -15,5 +15,5 @@ let Pikachu = {
   height: 4
 };
 
-pokemonList.push("Bulbasaur","Charizard","Pikachu")
+pokemonList.push(bulbasaur,charizard,pikachu)
 

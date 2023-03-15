@@ -2,17 +2,17 @@ let pokemonList = []
 
 let Bulbasaur = {
   type: 'grass'+'poison',
-  height: 7,
+  height: 0.7,
 };
 
 let Charizard = {
   type: 'fire',
-  height:6
+  height:1.6
 };
 
 let Pikachu = {
   type: 'electric',
-  height: 4
+  height: 0.4
 };
 
 pokemonList.push(bulbasaur,charizard,pikachu)
@@ -26,3 +26,4 @@ for (let i= 0; i < pokemonList.length;i++){
 } else {
 document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + "m) - That is a small pokemon!" + "<br>");
 }
+

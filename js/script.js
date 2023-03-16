@@ -1,21 +1,37 @@
-let pokemonList = []
+let pokemonRepository = (function(){
 
-let Bulbasaur = {
-  type: 'grass'+'poison',
-  height: 0.7,
-};
-
-let Charizard = {
+let pokemonList = [
+{
+     name: 'Bulbasaur', 
+     type: 'grass'+'poison',
+      height: 0.7,
+},
+{
+  name: 'Charizard', 
   type: 'fire',
   height:1.6
-};
-
-let Pikachu = {
+},
+{
+  name: 'Pikachu',
   type: 'electric',
   height: 0.4
-};
+},
 
-pokemonList.push(bulbasaur,charizard,pikachu)
+]
+
+function getAll(){
+  return pokemonList;
+}
+function add (pokemon){
+  pokemonList.push(pokemon);
+}
+return{
+  getAll: getAll,
+  add: add
+}
+
+})()
+
 
 
 //forEach loop

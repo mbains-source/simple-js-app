@@ -34,14 +34,20 @@ return{
 
 
 
-//forEach loop
-pokemonList.forEach(function(pokemon) {
-  if (pokemon.height >=5) {
-      document.write(pokemon.name + " (height: " + pokemon.height + "m) - Wow, that is a big Pokemon!!" + "<br>")
-    } else if (pokemon.height >= 1.6 && pokemon.height < 5) {
-      document.write(pokemon.name + " (height: " + pokemon.height + "m) - Wow, that is a medium Pokemon!" + "<br>")
-    } else {
-      document.write(pokemon.name + " (height: " + pokemon.height + "m) - That is a small pokemon!" + "<br>")
-    }
-  });
+//forEach loop revised to include DOM Functionality
+function addListItem(pokemon) {
+  let pokedexList = document.querySelector('.pokemon-list');
+  let listItem = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = pokemon.pokemonName;
+  button.classList.add('pokemon-name-list');
+  listItem.appendChild(button);
+  pokedexList.appendChild(listItem);
+  button.addEventListener('click', showDetails)
+}
+
+function showDetails(pokemon) {
+  console.log(pokemon.pokemonName);
+}
+  ;
   

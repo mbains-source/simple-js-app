@@ -19,9 +19,11 @@ function getAll() {
 
 //forEach loop 
 function addListItem(pokemon) {
+  //Functions & Selctors
   let pokedexList = document.querySelector('.pokemon-list');
   let listItem = document.createElement('li');
   let button = document.createElement('button');
+  //Buttons
   button.innerText = pokemon.name;
   button.classList.add('pokemon-name-list');
   listItem.appendChild(button);

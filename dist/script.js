@@ -124,6 +124,7 @@ return {
   getAll: getAll,
   loadList: loadList,
   loadDetails: loadDetails
+
 };
 
 

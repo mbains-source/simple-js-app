@@ -1,5 +1,5 @@
-# simple-js-app
+# POKEDEX APP READ ME
 
-Welcome! In this Github Repository I will build a simple javascript app that acts as a directory of Pokemon to fulfill the achievement
-objective of building a small web application with HTML, CSS, and JavaScript that loads
-data from an external API and enables the viewing of data points in detail.
+Welcome! This application is a simple javascript app that allows users to view the statistics of various pokemons
+by traversing through a directory of pokemon, herafter referred to as "PokeDex". The PokeDex contains vital statistics
+about respective Pokemon such as type, name and height.

@@ -29,8 +29,8 @@ function addListItem(pokemon) {
   button.classList.add("pokemon-button");
   button.setAttribute ('date-toggle','modal');
   button.setAttribute ('date-target','#examplemodal');
-  createlistItem.appendChild(button);
-  pokemonListFolder.appendChild(createlistItem);
+  listItem.appendChild(button);
+  pokemonListFolder.appendChild(listItem);
   button.addEventListener('click', function () {
     showDetails(pokemon);
   });
@@ -119,13 +119,16 @@ return {
   getAll: getAll,
   loadList: loadList,
   loadDetails: loadDetails
-
+  addListItem,
 };
  
 
-  });
+  })();
 
-
+pokemonRepository.loadList()
+  .then(()=> {
+    pokemonRepository.getAll().forEach(pokemon => pokemonRepository.addListItem(pokemon))
+})
 
 
 

@@ -114,11 +114,6 @@ window.addEventListener('keydown', (e) => {
   });
 }
 
- 
-
-  });
-
-
 return {
   add: add,
   getAll: getAll,
@@ -126,6 +121,12 @@ return {
   loadDetails: loadDetails
 
 };
+ 
+
+  });
+
+
+
 
 
 

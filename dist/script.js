@@ -20,13 +20,13 @@ function getAll() {
 //forEach loop (JQUERY + BOOTSTRAP)
 function addListItem(pokemon) {
   //Functions & Selctors
-  let pokedexList = document.querySelector(".list-group");
-  let listItem = document.createElement("li");
-  let button = document.createElement("button");
+  let pokedexList = document.querySelector('.list-group');
+  let listItem = document.createElement('li');
+  let button = document.createElement('button');
   //Buttons
   button.innerText = pokemon.name;
-  button.classList.add("btn-primary");
-  button.classList.add("pokemon-button");
+  button.classList.add('btn-primary');
+  button.classList.add('pokemon-button');
   button.setAttribute ('date-toggle','modal');
   button.setAttribute ('date-target','#examplemodal');
   listItem.appendChild(button);
@@ -63,16 +63,16 @@ function showDetails(pokemon) {
   });
 }
 function showModal(pokemon) {
-  let modalBody = $(".modal-body");
-  let modalTitle = $(".modal-title");
+  let modalBody = $('.modal-body');
+  let modalTitle = $('.modal-title');
 
   modalTitle.empty();
   modalBody.empty();
 
-  let pokemonName = $("<h1>" + pokemon.name + "</h1>")
+  let pokemonName = $('<h1>' + pokemon.name + '</h1>')
   let pokemonImage = $('<img class="modal-img" style="width:50%">');
-  pokemonImage.attr("src", pokemon.imageUrl);
-  let pokemonHeight = $("<p>" + "Height : " + pokemon.height + "</p>");
+  pokemonImage.attr('src', pokemon.imageUrl);
+  let pokemonHeight = $('<p>' + 'Height : ' + pokemon.height + '</p>');
   
   modalTitle.append(pokemonName);
   modalBody.append(pokemonImage);

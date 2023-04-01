@@ -78,6 +78,7 @@ function showModal(pokemon) {
   modalTitle.append(pokemonName);
   modalBody.append(pokemonImage);
   modalBody.append(pokemonHeight);
+  modalContainer.html(modalBody);
 }
 function hideModal() {
   let modalContainer = document.querySelector('#modal-container');

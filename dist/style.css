@@ -178,7 +178,13 @@ main {
   top:0;
   left:0;
   width:100vw;
-  
+
+}
+
+.modal-body{
+  background-color: blue;
+  width: 50%;
+  margin: 50px auto;
 }
 
 /*

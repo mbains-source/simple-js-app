@@ -75,10 +75,11 @@ function showModal(pokemon) {
   pokemonImage.attr('src', pokemon.imageUrl);
   let pokemonHeight = $('<p>' + 'Height : ' + pokemon.height + '</p>');
   
-  modalTitle.append(pokemonName);
-  modalBody.append(pokemonImage);
-  modalBody.append(pokemonHeight);
-  modalContainer.html(modalBody);
+  modalContainer.append(pokemonName);
+  modalContainer.append(pokemonImage);
+  modalContainer.append(pokemonHeight);
+  modalContainer.addClass("show")
+  //modalContainer.html(modalBody);
 }
 function hideModal() {
   let modalContainer = document.querySelector('#modal-container');

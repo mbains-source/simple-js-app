@@ -63,6 +63,7 @@ function showDetails(pokemon) {
   });
 }
 function showModal(pokemon) {
+  let modalContainer = $('#modal-container')
   let modalBody = $('.modal-body');
   let modalTitle = $('.modal-title');
 
@@ -119,7 +120,7 @@ return {
   getAll: getAll,
   loadList: loadList,
   loadDetails: loadDetails
-  addListItem,
+  addListItem
 };
  
 

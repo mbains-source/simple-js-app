@@ -142,16 +142,16 @@ main {
   max-width: 100%;
 }
 
-/*
+
 .modal-img {
- transform: scale(2);
+  /*transform: scale(2);*/
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   margin: auto;
   display: flex;
   align-items: center;
 }
-*/
+
 
 .modal-title {
   font-weight: 900;

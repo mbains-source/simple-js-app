@@ -71,6 +71,8 @@ function showModal(pokemon) {
   modalBody.empty();
 
   let pokemonName = $('<h1>' + pokemon.name + '</h1>')
+  let closeButton = $('<button>close</button>');
+  closeButton.addEventListener('click', hideModal)
   let pokemonImage = $('<img class="modal-img" style="width:50%">');
   pokemonImage.attr('src', pokemon.imageUrl);
   let pokemonHeight = $('<p>' + 'Height : ' + pokemon.height + '</p>');
@@ -83,7 +85,7 @@ function showModal(pokemon) {
 }
 function hideModal() {
   let modalContainer = document.querySelector('#modal-container');
-  modalContainer.classList.remove('is-visible');
+  modalContainer.classList.remove('show');
 }
 
 window.addEventListener('keydown', (e) => {

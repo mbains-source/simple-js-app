@@ -71,12 +71,13 @@ function showModal(pokemon) {
   modalBody.empty();
 
   let pokemonName = $('<h1>' + pokemon.name + '</h1>')
-  let closeButton = $('<button>close</button>');
+  let closeButton = document.createElement('button');
   closeButton.addEventListener('click', hideModal)
   let pokemonImage = $('<img class="modal-img" style="width:50%">');
   pokemonImage.attr('src', pokemon.imageUrl);
   let pokemonHeight = $('<p>' + 'Height : ' + pokemon.height + '</p>');
   
+  modalBody.appendChild(closeButton)
   modalBody.append(pokemonName);
   modalBody.append(pokemonImage);
   modalBody.append(pokemonHeight);
@@ -96,14 +97,14 @@ window.addEventListener('keydown', (e) => {
 });
  
       // for loop used to iterate through the item.types 
-      for (let i = 0; i < item.types.length; i++) {
+      //for (let i = 0; i < item.types.length; i++) {
        //name of the current type is concatenated to the typeNames variable (appending to the end of the string)
-       pokemonTypes += item.types[i].type.name;
+       //pokemonTypes += item.types[i].type.name;
        //CONDITION: if i < - 1, a comma and space added to typeNames  
-       if (i < item.types.length - 1) {
-           pokemonTypes += ", ";
-       }
-   }
+       //if (i < item.types.length - 1) {
+       //    pokemonTypes += ", ";
+      // }
+   //}
  
  function loadDetails(item) {
   let url = item.detailsUrl;

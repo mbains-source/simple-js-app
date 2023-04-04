@@ -174,8 +174,12 @@ main {
   align-self: flex-start;
 }
 
-#modal-container.show{
+#modal-container{
   display: none;
+}
+
+#modal-container.show{
+  display: block;
   position:fixed;
   top:0;
   left:0;

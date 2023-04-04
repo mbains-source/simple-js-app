@@ -30,7 +30,7 @@ function addListItem(pokemon) {
   button.setAttribute ('date-toggle','modal');
   button.setAttribute ('date-target','#examplemodal');
   listItem.appendChild(button);
-  pokemonListFolder.appendChild(listItem);
+  pokedexList.appendChild(listItem);
   button.addEventListener('click', function () {
     showDetails(pokemon);
   });
@@ -123,7 +123,7 @@ return {
   add: add,
   getAll: getAll,
   loadList: loadList,
-  loadDetails: loadDetails
+  loadDetails: loadDetails,
   addListItem
 };
  

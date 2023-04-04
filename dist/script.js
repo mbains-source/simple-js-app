@@ -72,11 +72,12 @@ function showModal(pokemon) {
 
   let pokemonName = $('<h1>' + pokemon.name + '</h1>')
   let closeButton = document.createElement('button');
-  closeButton.on('click', hideModal)
+  closeButton.addEventListener('click', hideModal)
+  //closeButton.on('click', hideModal)
   let pokemonImage = $('<img class="modal-img" style="width:50%">');
   pokemonImage.attr('src', pokemon.imageUrl);
   let pokemonHeight = $('<p>' + 'Height : ' + pokemon.height + '</p>');
-  modalBody.appendChild(closeButton)
+  modalBody.append(closeButton)
   modalBody.append(pokemonName);
   modalBody.append(pokemonImage);
   modalBody.append(pokemonHeight);
